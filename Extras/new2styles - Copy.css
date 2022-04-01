@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+nav{
+    background: green;
+}
+.container{
+    display: flex;
+    background: #f0f7fc;
+    width: calc(100% - 10rem);
+    margin: 0 auto;
+    border-radius: 3rem;
+    background-color: #f0f7fc;
+    padding: 5rem 20px 5rem 20px;
+}
+
+.text-box{
+    margin:auto;
+    width:100%;
+}
+
+.image-box{
+    margin:auto;
+    width:100%;
+}
+
+.text-box .paragraph{
+	font-size:24px;
+	line-height:3rem;
+	color:#474b4c;
+	margin:3.6rem 0 3.5rem 0
+}
+
+.text-box .paragraph span{
+font-weight:700
+}
+
+.text-box .main-heading{
+font-size:80px;
+font-weight:600;
+color:#000;
+letter-spacing:-0.4rem;
+width:100%
+}
+
+.hero-img img {
+	height: 850px;
+	margin-left: 25px;
+    z-index: 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+.hero-img::before {
+    left: 10%;
+    display: block;
+    position: relative;
+	margin-bottom: -747px;
+    content: "";
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: #9341d4;
+    background: linear-gradient(45deg, #9341d4 0%, #d98efb 50%, #9341d4 100%);
+    background-size: 400% 400%;
+	animation-name: animateGradient;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animateGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.buttons {
+    width: max-content;
+    margin: 0;
+}
+
+.buttons a:last-child {
+    margin-left: 20px;
+}
+
+.buttons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    background-color: grey;
+    border-radius: 5rem;
+    transition: all .25s ease;
+    background-size: 200% 200% !important;
+	text-decoration: none !important;
+}
+
+.buttons a .button-content span {
+    display: block;
+    font-size: 20px;
+    color: white;
+    margin-top: 0.2rem;
+    letter-spacing: initial;
+}
+
+.buttons a .button-content h6 {
+    font-size: 12px;
+    color: #ffd4e3;
+}
+
+.buttons a.shop-button {
+    background: linear-gradient(0deg, #f2026b 0%, #ff8aaf 50%, #f2026b 100%);
+    filter: drop-shadow(0px 10px 10px rgba(245,69,144,0.4));
+}
+.buttons a.quiz-button{ 
+    background: linear-gradient(0deg, #1369ec 0%, #65bef4 50%, #1369ec 100%);
+    filter: drop-shadow(0px 10px 10px rgba(33,120,237,0.4));
+    
+}
+
+a.shop-button:hover{
+    background: linear-gradient(0deg, #f2026b 0%, #ff8aaf 50%, #f2026b 100%);
+}
+
+

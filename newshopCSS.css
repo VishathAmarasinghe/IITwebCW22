@@ -1,0 +1,347 @@
+#abc{
+    width: 90%;
+    height: 405vh;
+    /* border: 2px solid black; */
+    margin: 100px auto 20px auto;
+    border-radius: 40px;
+    background-color: #77A6F7;
+    padding-top: 40px;
+}
+*{
+    font-family: poppins sans-serif;
+}
+.pic{
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 60px;
+
+}
+.pqr{
+    width: 90%;
+    height: 400px;
+    margin: 40px auto 0PX auto;
+    border-radius: 25px;
+    background-color: white;
+}
+.ppp{
+    width: 60%;
+    height: 300px;
+    background-color: #c5cbe3;
+    border-radius: 20px;
+    float: right;
+    margin: 50px 50px 0px 0px;   
+}
+.inner-container{
+    margin-left: 30px;
+}
+.radio_style{
+    margin-bottom: 15px;
+}
+.buttons{
+    float: right;
+    margin:0px 30px 00px 0px;
+    width: 20vh;
+    height: 30px;
+}
+
+input[type="radio"]{
+    display: none;
+
+}
+.radiolable{
+    border: 2px solid white;
+    width: 43px;
+    height: 20px;
+    margin: 20px;
+    text-align: center;
+    padding-top:4px ;
+    border-radius: 5px;
+}
+.radio_style{
+    position: relative;
+    left: 50px;
+    top: -60px;
+    display: inline-flex;
+}
+.details p{
+    position: relative;
+    top: 10px;
+
+}
+input[type="radio"]:checked+.radiolable{
+background-color:#77A6F7;
+color: white;
+}
+#quantity{
+    width: 70px;
+    height: 20px;  
+    border-radius: 10px;
+}
+p,#Quantitylabel{
+    font-size: 18px;
+}
+
+
+
+
+
+/* checkout */
+
+
+#checkout {
+	/* padding: 10px; */
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+			
+#checkoutForm {
+	float: left;
+	width: 50%;
+}
+			
+#checkoutTopBox{
+	background-color : #BFBFBF;
+	border: 5px solid white;
+    border-top-left-radius:15px ;
+    border-top-right-radius: 15px;
+	border-bottom: none;
+	padding: 5px 0px 5px 0px;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	color: black;	
+}
+			
+#checkoutMiddleBox{
+	border: 5px solid white;
+	padding-top: 20px;
+	text-align: center;
+	background-color: #6B6B6B;
+}
+
+.info {
+	float : left;
+	clear: both;
+	margin-left: 7%;
+	margin-bottom : 21px;
+	width: 30%;
+	text-align: left;
+	font-weight: 600;
+        color: black;
+        font-weight: bold;
+        font-family:Poppins ;
+}
+
+#checkoutMiddleBox input {
+	margin-bottom : 21px;
+	width: 50%;
+}
+
+#checkoutMiddleBox textarea {
+	margin-bottom : 21px;
+	width: 50%;
+}
+.description{
+    font-size: 15px;
+}
+
+#checkoutBottomBox{
+	border: 5px solid white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+	border-top: none;
+	text-align: center;
+	font-weight: 600;
+    height: 7vh;
+	padding: 10px 0px 10px 0px;
+	background-color : #BFBFBF;
+	color: black;
+}
+
+#bill {
+	position: absolute;
+	width: 35%;
+    left: 58%;
+    top: 50px;
+    line-height: 10px;
+    float: right;
+}
+
+.div_{
+       background-color:#6B6B6B;
+       height:1400px;
+       width:450px;	 
+       float:right;
+       line-height:12px;
+       margin-left:350px;
+       border-style:solid;
+       border-width:5px;
+       border-color:white;
+       border-radius: 15px;
+       margin-top:0px;
+}
+
+.text1{
+       font-family:Poppins;	
+       font-size:30px;
+       padding-left:25px;
+       font-weight:bold;
+       color:white;
+       margin-top:0px;
+}
+
+.contact{
+	font-family:Poppins;
+	font-size:30px;
+	float:left;
+	padding-left:20px;
+	color:white;
+	line-height:40px;
+}
+
+.invoice-line{
+	color:white;
+	margin-left:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.logo_{
+	width:120px;
+	height:100px;
+	float:right;
+        margin-right: 20px;
+}
+
+#personal_details{
+	color: white;
+        font-size: 20px;
+        font-family: Poppins;
+        line-height: 25px;
+        margin-left: 20px;
+}	
+
+#products_details{
+	display: none;
+	color: white;
+        font-size: 20px;
+        font-family: Poppins;
+        line-height: 30px;
+        margin-left: 20px;
+}	
+
+#total{
+	color: white;
+        font-size: 20px;
+        font-family: Poppins;
+        line-height: 25px;
+        margin-left: 20px;
+}
+#personaldetails{
+    position: relative;
+    top: 100px;
+    background-color: #e4e2ba;
+    width: 90%;
+    margin:0px auto 0PX auto ;
+    height: 230vh;
+    border-radius: 40px;
+    /* padding-top: 0px; */
+}
+ 
+
+
+
+
+/* footer */
+
+
+
+.productFooter{
+    clear: both;
+    width: 90%;
+    height: 40vh;
+    background-color: #77A6F7;
+    /* margin: 1500px auto 0 auto; */
+    border-top-left-radius:40px;
+    border-top-right-radius: 40px;
+    /* border: 2px solid black; */
+    position: relative;
+    left: 4.5vw;
+    top: 25vh;
+    
+    /* bottom: -100vh; */
+}
+#divlogo{
+    width: 100px;
+    margin: 20px 0px 0px 40px;
+}
+#brief{
+    margin: 30px 0px 0px 40px;
+    text-align: justify;
+    line-height: 26px;
+    color:white;
+    font-size: 20px;
+}
+#coptyrights{
+    margin: 40px 0px 0px 40px;
+    color: white;
+}
+#explorelistUl li{
+    /* text-decoration: none; */
+    list-style-type:none;
+    line-height: 40px;
+    font-size: 22px;
+    color: white;
+    
+}
+#explorelistUl a{
+    text-decoration: none;
+    color:white
+    
+}
+#Explore{
+    position: absolute;
+    top: 40px;
+    right: 24.0vw;
+    /* color: white; */
+    color: white;
+}
+
+#ToDev{
+    position: absolute;
+    top: 18vh;
+    right:22vw;
+    width: 10vw;
+    height: 55px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 18px;
+    border: 2px solid white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 6px;
+    /* background-color: white; */
+    /* color: #83dfff; */
+}
+#ToDev:hover{
+    background-color:white;
+    /* color: white; */
+    border: 3px solid black;
+}
+button{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    position: relative;
+    bottom: 10px;
+    font-weight: 600;
+    
+}
+button:hover{
+    background-color:#77A6F7;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+

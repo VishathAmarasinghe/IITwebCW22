@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: Ava;
+  src: url("Fonts/Ava-Meridian.ttf");
+}
+
+
+body{
+    padding: 0 40px;
+    font-family: Poppins;
+    overflow-y: none;
+    margin-bottom: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+.container-1{
+    padding: 150px 0 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.row{
+    display: flex;
+    width: 100%;
+    
+}
+
+.column-1{
+    display: flex;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+}
+
+.Stripes{
+    height:400px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 100px;
+    z-index:-3;
+}
+
+
+.hero-img .trophy{
+	height: 400px;
+    z-index: 1;
+}
+
+
+.hero-img::before {
+    position: absolute;
+    bottom: 120px;
+    content: "";
+    width: 450px;
+    height: 450px;
+    z-index:-1;
+    border-radius: 50%;
+    background: #9341d4;
+/*    background: linear-gradient(45deg, #9341d4 0%, #d98efb 50%, #9341d4 100%);*/
+    background: linear-gradient(45deg, #19a5a1 0%, #63e8e4 50%, #19a5a1 100%);
+    background-size: 400% 400%;
+	animation-name: animateGradient;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animateGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.column-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; 
+    
+}
+
+.head-main{
+    font-size: 40px;
+    line-height: 80px;
+} 
+
+#head{
+    margin-bottom: 20px;
+}
+
+#fifa{
+    font-family: Ava;
+    letter-spacing: 8px;
+    background: -webkit-linear-gradient(45deg, #19a5a1 0%, #63e8e4 50%, #19a5a1 100%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: animateGradient;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.head-sub{
+    font-size: 20px;
+}
+
+.floating-box{
+    padding: 120px 0 0 0;
+    background: white;
+}
+
+.horizontal-bar{
+    display: inline-block;
+    animation: move 20s linear infinite;
+    white-space: nowrap;
+}
+
+.wrapper{
+    background: linear-gradient(90deg, #19a5a1 0%, #63e8e4 100%);
+    animation-name: animateGradient;
+    background-size: 300%;
+    animation-duration: 4s;
+    position: absolute; 
+    left: 0;
+    right: 0;
+    margin-top: 53px;
+    animation-iteration-count: infinite;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.horizontal-bar p{
+    display: inline-block;
+    margin: 18px 0;
+    padding: 0;
+    color:white;
+}
+
+
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+.container-2{
+    background: white;
+    padding-top: 60px;
+
+}
+
+.heading, .heading-2{
+    text-align: center;
+    font-size: 40px;
+    margin: 80px 0;
+}
+
+.para{
+    text-align: justify;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    border-radius: 30px;
+    margin: 0 20%;
+    padding: 3% 5%;  
+}
+
+.league-para{
+    background: linear-gradient(45deg, #19a5a1 0%, #63e8e4 100%);
+    filter: drop-shadow(0px 20px 10px rgba(79,188,186,.4));
+}
+
+.leagues{
+    padding-top: 60px;
+    
+}
+
+.container-3{
+    margin-bottom: 50px;
+}
+
+
+.league-buttons{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.btn , .button {
+    height: 50px;
+    border-radius: 10rem;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.button{
+    text-align: center;    
+    width: 200px;
+    background: #1369ec;
+    background: linear-gradient(0deg, #19a5a1 0%, #63e8e4 100%);
+    filter: drop-shadow(0px 20px 10px rgba(79,188,186,.4));
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border:none;
+    transition: all .25s ease;
+	background-size: 200% 200% !important;
+	background-position: center bottom !important;
+}
+
+.button:hover {
+    background-position: center top !important;
+    transform: scale(1.2);
+}
+
+.btn{
+    
+	background: linear-gradient(0deg, #19a5a100 0%, #63e8e400 50%, #19a5a1ff 100%);
+    background-size: 350% 350%;
+	background-position: center bottom;
+    width: 150px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s ease;
+   
+}
+
+.btn:hover {
+    background-position: center top;
+	border: none;
+    filter: drop-shadow(0px 10px 20px rgba(255, 186, 114, .4));
+    color: white;
+}
+
+
+.container-4, .container-5{
+    width: 88%;
+    margin: 120px auto 0 auto;
+    border-radius: 3rem;
+    background-color: #19a5a115;
+    padding: 0 20px 100px;
+}
+
+.league-box{
+    width: 100%;
+    padding-top: 100px;
+    
+    
+}
+.league-row{
+    display: flex;
+    
+}
+
+.league-col-1{
+    display: flex;
+    width: 40%;
+}
+
+.league-col-2{
+    display: flex;
+    background-color: white;
+    border-radius: 40px;
+    width: 60%;
+    margin-right: 90px;
+    padding: 2% 6%;
+    flex-direction: column;
+    justify-content:center;
+
+}
+
+.league-intro-row{
+    display: flex;
+    flex-direction: column;
+      
+}
+.league-name{
+    
+    
+    
+}
+
+.league-intro-col-1{
+    padding-right: 10px;
+    text-align: justify;
+    
+}
+
+.league-intro-col-2{
+    margin-bottom: 30px;
+    
+}
+
+.icon {
+    margin: auto;
+    width: 9rem;
+    height: 9rem;    
+    border-radius: 50%;
+    filter: drop-shadow(0px 30px 20px rgba(25,165,161,0.15));
+    transition: all 0.25s ease;
+}
+
+
+
+.league-box:hover .icon {
+	 transform: scale(1.4);
+}
+
+ 
+.league-title{
+    font-size: 22px;
+    transition: all 0.25s ease;
+}
+
+.league-intro{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

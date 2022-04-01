@@ -1,0 +1,547 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    height: 100%;
+
+}html{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height:100%;
+
+    border: 2px solid white;
+    margin-bottom: 20px;
+
+}
+.container h1{
+    text-align: center;
+    margin-top: 40vh;
+    font-size: 42px;
+
+}
+#HeadingIS{
+    color: #2BAE66FF;
+    font-weight: 1000;
+}
+.container h2{
+text-align: center;
+}
+.container2{
+    border: 2px solid black;
+    background-color: #2BAE66FF;
+    height: 70vh;
+    width: 90%;
+    margin: 190px auto 40px auto;
+    border-radius: 25px;
+}
+.container2 img{
+    float: right;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+.container3{
+    clear: right;
+    margin-top: 25vh;
+    height:70vh;
+}
+.container3 h1{
+    text-align: center;
+}
+
+
+.container4{
+    border: 2px solid black ;
+    background-color: #2BAE66FF;
+    height: 70vh; 
+    margin: 10vh auto 10vh auto;
+    width: 90%;
+    border-radius: 25px;
+}
+#hastle{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+#clock{
+    position: absolute;
+    left: 10vw;
+    margin-top: 40px;
+    
+}
+#deliver{
+    position: absolute;
+    right: 10vw;
+    margin-top:40px ;
+  
+}
+#easy{
+    position: absolute;
+    left: 40vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+    
+}
+
+.HasteIcons:hover{
+    width: 80px;
+
+    
+}
+
+#clockshortDescript{
+    position: absolute;
+    left: 9.5vw;
+    margin-top: 25vh;
+    font-size: 25px;
+    color: white;
+}
+#easyshortdescript{
+    position: absolute;
+    left: 40vw;
+    margin-top: 25vh;
+    font-size: 25px;
+    color: white;
+}
+#delivershortdescript{
+    position: absolute;
+    right: 6vw;
+    margin-top: 25vh;
+    font-size: 25px;
+    color: white;
+}
+#clocklongdesc{
+    position: absolute;
+    left: 7.5vw;
+    margin-top: 30vh;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+#easylongdesc{
+    position: absolute;
+    left: 35.5vw;
+    margin-top: 30vh;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+#deliverlongdesc{
+    position: absolute;
+    right: 3vw;
+    margin-top: 30vh;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+#imagecontainer{
+    
+    width: 90%;
+    height: 100vh;
+    position: relative;
+    
+    top: 10px;
+    margin: auto;
+    
+}
+#imagecontainer h1{
+    position:absolute;
+    left: 40vw;
+    top: 40px;
+    color: rgb(0, 0, 0);
+}
+#container{
+    display: flex;
+    width: 100%;
+    height: 55vh;
+    position: absolute;
+    top: 25vh;
+
+}
+.members{
+    width: 20vw;
+    margin: 15px;
+
+}
+.memberD{
+    width: 300px;
+    height: 10vh;
+    position: absolute;
+    bottom: 100px;
+    background-color: #2BAE66FF;
+    z-index: -1;
+    transition: 1.2s;
+    border-radius: 3px;
+    
+}
+.man{
+    position: absolute;
+    width: 300px;
+    height: 315px;
+    border: 2px solid black;
+    border-radius: 12px;
+    
+}
+
+#Img3:hover ~ #memb3dec{
+    background-color: #2BAE66FF;
+    bottom: 0px;
+    z-index: 1;
+    border: 2px solid black;
+}
+
+#Img1:hover ~ #memb1dec{
+    background-color:#2BAE66FF;
+    bottom: 0px;
+    z-index: 1;
+    border: 2px solid black;
+}
+
+
+#Img2:hover ~ #memb2dec{
+    background-color:#2BAE66FF;
+    bottom: 0px;
+    z-index: 1;
+    border: 2px solid black;
+}
+
+#Img4:hover ~ #memb4dec{
+    background-color: #2BAE66FF;
+    bottom: 0px;
+    z-index: 1;
+    border: 2px solid black;
+}
+
+
+#memb3dec:hover{
+    animation-play-state: paused;
+}
+#member2full{
+    z-index: 0;
+    background-color: brown;
+}
+.heading{
+    color: white;
+    position: relative;
+    left: 45vw;
+    top: 35px;
+}
+.hide{
+    display: none;
+}
+#people{
+    border: 2px solid white;
+    width: 55vw;
+    height: 50vh;
+    position: relative;
+    left: 23vw;
+    top: 20vh;
+    background-color:#2BAE66FF;
+    margin-bottom: 80vh;
+    border-radius: 10px;
+
+    
+}
+#largepic{
+    border: 2px solid white;
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    left: 2vw;
+    top: 4vh;
+    border-radius: 5px;
+}
+#socialtags{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    right: 7vw;
+}
+
+
+
+
+.socialIMG{
+    width: 30px;
+    height: 30px;
+    margin: 13px;
+}
+#backarrow{
+    float: right;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.detail{
+    color: white;
+    text-align: center;
+    margin: 2px;
+}
+#LdiscContainer{
+    width: 28vw;
+    height: 35vh;
+    position: absolute;
+    top: 30px;
+    left: 25vw;
+}
+#pic1{
+    width: 20vw;
+    height: 40vh;
+}
+#LdiscContainer p{
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+}
+#mission{
+    font-size: 25px;
+    width: 74%;
+    margin: 40px auto 80px auto;
+    text-align: center;
+}
+#Productcount{
+    margin-left: 14vw;
+    font-size: 55px;
+    
+}
+
+#buyercount{
+    margin-left: 27vw;
+    font-size: 55px;
+    
+
+}
+#membercount{
+    margin-left: 27vw;
+    font-size: 55px;
+
+}
+#ProductName{
+    margin-left: 14vw;
+    font-size: 25px;
+}
+#Buyers{
+    margin-left: 26vw;
+    font-size: 25px;
+}
+#Members{
+    margin-left: 27.5vw;
+    font-size: 25px;
+}
+.container2 h2{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    left: 10vw;
+    margin-top: 80px;
+}
+.container2 h3{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    left:10vw;
+    margin-top: 180px;
+}
+#shortcutToTeam{
+    position: absolute;
+    text-decoration: none;
+    width: 10vw;
+    height: 40px;
+    color: #2BAE66FF;
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+    left: 10vw;
+    bottom: -75vh;
+    font-weight: 900;
+    border-radius: 15px;
+    
+}
+#shortcutToTeam:hover{
+    background-color:#2BAE66FF;
+    color: white;
+    border: 3px solid white;
+}
+
+
+
+#ball{
+    width: 120px;
+    
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
+
+.bolling{
+    animation-name: rotateball;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+
+}
+
+
+#grass{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+@keyframes rotateball{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(540deg);
+        left: 170vh;
+    }
+}
+
+.bolling2{
+    animation-name: rotateball2;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotateball2{
+    0%{
+        top: 0px;
+        transform: rotate(0deg);
+        left: 100vh;
+        animation-timing-function: ease-in;
+    }
+    10%{
+        top: 80vh;
+        left: 80vh;
+        animation-timing-function: ease-in;
+    }
+    20%{
+        top: 150px;
+        left: 60vh;
+        animation-timing-function: ease-out;
+    }
+    35%{
+        top: 80vh;
+        animation-timing-function: ease-in;
+    }
+    45%{
+        top: 35vh;
+        animation-timing-function: ease-out;
+    }
+    55%{
+        top: 80vh;
+        animation-timing-function: ease-out;
+    }
+    67%{
+        top: 48vh;
+        animation-timing-function: ease-out;
+    }
+    80%{
+        top: 80vh;
+        animation-timing-function: ease-out;
+    }
+    90%{
+        top: 63vh;
+        animation-timing-function: ease-out;
+    }
+    100%{
+        top:80vh
+    }
+  
+}
+
+#scroll{
+    position: fixed;
+    top: 89vh;
+    left: 94vw;
+    z-index: 5;
+    display: none;
+    width: 70px;
+
+}
+
+
+/* footer */
+.aboutusFooter{
+    width: 90%;
+    height: 38vh;
+    background-color: #2BAE66FF;
+    margin: auto;
+    border-top-left-radius:45px;
+    border-top-right-radius: 45px;
+    position: relative;
+}
+#divlogo{
+    width: 100px;
+    margin: 20px 0px 0px 40px;
+}
+#brief{
+    margin: 30px 0px 0px 40px;
+    text-align: justify;
+    line-height: 26px;
+    color: white;
+    font-size: 20px;
+}
+#coptyrights{
+    margin: 40px 0px 0px 40px;
+    color: white;
+}
+#explorelistUl li{
+    text-decoration: none;
+    list-style-type:none;
+    line-height: 40px;
+    font-size: 22px;
+}
+#explorelistUl a{
+    text-decoration: none;
+    color: white;
+}
+#explorelistUl a:hover{
+    text-decoration: underline;
+}
+#Explore{
+    position: absolute;
+    top: 20px;
+    right: 45vw;
+    color: white;
+}
+#explorelistUl{
+    position: absolute;
+    right: 44vw;
+    top: 80px;
+    
+}
+#ToDev{
+    position: absolute;
+    bottom: 15vh;
+    right:15vw;
+    width: 10vw;
+    height: 50px;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 18px;
+    background-color: white;
+    color: #2BAE66FF;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+#ToDev:hover{
+    background-color: #2BAE66FF;
+    color: white;
+    border: 3px solid white;
+}
+#developer{
+    position: absolute;
+    top: 20px;
+    right: 18vw;
+    color: white;
+} 

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FootBall Shop</title>
+    <link rel="stylesheet" href="newshopCSS.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ca614df6dc.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="nav-wrapper" >
+            <div class="logo">
+                <a href="#home"><img src="Images/Hastelogo.png" alt="image" height="60px"></a>
+            </div>
+            
+            <ul class="nav-items">
+                <li>
+                    <a href="#home"><i class="fa-solid fa-house"></i></a>
+                </li> 
+    
+                <li>
+                    <a href="shop.html">SHOP</a>
+                </li>
+
+                <li>
+                    <a href="quiz.html">QUIZ</a>
+                </li>
+
+                <li>
+                    
+                    <div class="dropdown">
+                      <a href="leagues.html" class="dropdown-cont">ABOUT FOOTBALL</a>
+                      <div class="dropdown-content">
+                        <a href="leagues.html#history">HISTORY</a>
+                        <a href="leagues.html#positions">POSITIONS</a>
+                        <a href="leagues.html#leagues">LEAUGES</a>
+                      </div>
+                    </div>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="thumbnail.html">GALLERY</a>
+                </li>
+                
+                <li>
+                    <a href="sitemap.html">SITE MAP</a>
+                </li>
+                
+                <li>
+                    <a href="aboutus.html">ABOUT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="abc">
+        <div class="pqr">
+            <img class="pic" src="images/kit.jpg" alt="sdfsefse">
+            <div class="ppp">
+                <div class="inner-container">
+                    <h1>Football Kit</h1>
+                        <h3 class="description">
+                           High quality material. Comfortable and Durable.
+                        </h3>
+                        <div class="details">
+                        <h4>Price: 2500 LKR</h4>
+                        
+						<form>
+                            <br>
+                             <label id="Quantitylabel">Quantity:</label>
+			                 <input id="quantity"  type="number" name="quantity" placeholder="Quantity" min="0" value="0">
+                             <p>Sizes : </p>
+                         <div class="radio_style">
+                             
+			                 <input  type="radio" class="radioBTN" value="M" id="kit_M" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="kit_M">M</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="L" id="kit_L" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="kit_L">L</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="XL" id="kit_XL" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="kit_XL">XL</label>
+			             </div>
+                         <button class="buttons"  type="button"    onclick="validation(this.form,'Football Kit','2500')">Add to Cart</button>
+                        </form> 
+                        </div>
+                    </div>
+		
+            </div>
+        </div>
+
+
+        <div class="pqr">
+            <img class="pic" src="images/ball.jpg" alt="sdfsefse">
+            <div class="ppp">
+                <div class="inner-container">
+                    <h1>Football</h1>
+                        <h3 class="description">
+                            High quality and Durable.
+                        </h3>
+                        <div class="details">
+                        <h4>Price: 1500 LKR</h4>
+                        
+						<form>
+                            <br>
+                             <label id="Quantitylabel">Quantity:</label>
+			                 <input id="quantity"  type="number" name="quantity" placeholder="Quantity" min="0" value="0">
+                             <p>colours : </p>
+                         <div class="radio_style">
+                             
+			                 <input  type="radio" class="radioBTN" value="vlack" id="ballBlack"  name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="ballBlack">Black</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="red" id="ballRed" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="ballRed">Red</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="blue" id="ballBlue" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="ballBlue">Blue</label>
+			             </div>
+                         <button class="buttons"  type="button"    onclick="validation(this.form,'Football','1500')">Add to Cart</button>
+                        </form> 
+                        </div>
+                    </div>
+		
+            </div>
+        </div>
+
+        <div class="pqr">
+            <img class="pic" src="images/boots.jpg" alt="sdfsefse">
+            <div class="ppp">
+                <div class="inner-container">
+                    <h1>Football Boots</h1>
+                        <h3 class="description">
+                            High quality. Super comfortable leather and padding. Durabale and Strong.
+                        </h3>
+                        <div class="details">
+                        <h4>Price: 3500 LKR</h4>
+                        
+						<form>
+                            <br>
+                             <label id="Quantitylabel">Quantity:</label>
+			                 <input id="quantity"  type="number" name="quantity" placeholder="Quantity" min="0" value="0">
+                             <p>Colours :</p>
+                         <div class="radio_style">
+                             
+			                 <input  type="radio" class="radioBTN" value="black" id="bootBlack" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="bootBlack">Black</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="white" id="bootWhite" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="bootWhite">White</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="blue" id="bootBlue" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="bootBlue">Blue</label>
+			             </div>
+                         <button class="buttons"  type="button"    onclick="validation(this.form,'Football Kit','2500')">Add to Cart</button>
+                        </form> 
+                        </div>
+                    </div>
+		
+            </div>
+        </div>
+
+        <div class="pqr">
+            <img class="pic" src="images/pads.jpg" alt="sdfsefse">
+            <div class="ppp">
+                <div class="inner-container">
+                    <h1>Shin Pads</h1>
+                        <h3 class="description">
+                            High quality. Super comfortable leather and padding. Durabale and Strong.
+                        </h3>
+                        <div class="details">
+                        <h4>Price: 1500 LKR</h4>
+                        
+						<form>
+                            <br>
+                             <label id="Quantitylabel">Quantity:</label>
+			                 <input id="quantity"  type="number" name="quantity" placeholder="Quantity" min="0" value="0">
+                             <p>Colours :</p>
+                         <div class="radio_style">
+                             
+			                 <input  type="radio" class="radioBTN" value="black" id="padBlack" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="padBlack">Black</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="white" id="padWhite" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="padWhite">White</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="blue" id="padBlue" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="padBlue">Blue</label>
+			             </div>
+                         <button class="buttons"  type="button"    onclick="validation(this.form,'Shin Pads','1500')">Add to Cart</button>
+                        </form> 
+                        </div>
+                    </div>
+		
+            </div>
+        </div>
+
+        <div class="pqr">
+            <img class="pic" src="images/glove.jpg" alt="sdfsefse">
+            <div class="ppp">
+                <div class="inner-container">
+                    <h1>Gloves</h1>
+                        <h3 class="description">
+                            High quality. Super comfortable leather and padding. Durabale and Strong.
+                        </h3>
+                        <div class="details">
+                        <h4>Price: 1500 LKR</h4>
+                        
+						<form>
+                            <br>
+                             <label id="Quantitylabel">Quantity:</label>
+			                 <input id="quantity"  type="number" name="quantity" placeholder="Quantity" min="0" value="0">
+                             <p>colours :</p>
+                         <div class="radio_style">
+                             
+			                 <input  type="radio" class="radioBTN" value="black" id="gloveBlack" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="gloveBlack">Black</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="white" id="gloveWhite" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="gloveWhite">White</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="blue" id="gloveBlue" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="gloveBlue">Blue</label>
+			             </div>
+                         <button class="buttons"  type="button"    onclick="validation(this.form,'Gloves','1500')">Add to Cart</button>
+                        </form> 
+                        </div>
+                    </div>
+		
+            </div>
+        </div>
+
+                <div class="pqr">
+            <img class="pic" src="images/bag.jpg" alt="sdfsefse">
+            <div class="ppp">
+                <div class="inner-container">
+                    <h1>Football Gear Bag</h1>
+                        <h3 class="description">
+                            High quality. Better space. Durable.
+                        </h3>
+                        <div class="details">
+                        <h4>Price: 2500 LKR</h4>
+                        
+						<form>
+                            <br>
+                             <label id="Quantitylabel">Quantity:</label>
+			                 <input id="quantity"  type="number" name="quantity" placeholder="Quantity" min="0" value="0">
+                             <p>Colours :</p>
+                         <div class="radio_style">
+                             
+			                 <input  type="radio" class="radioBTN" value="black" id="bagBlack" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="bagBlack">Black</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="white" id="bagWhite" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="bagWhite">White</label>
+			                 
+			                 <input type="radio" class="radioBTN" value="blue" id="bagBlue" name="rad_button" onchange="alert_message(this.form)">
+                             <label class="radiolable" for="bagBlue">Blue</label>
+			             </div>
+                         <button class="buttons"  type="button"    onclick="validation(this.form,'Football Gear Bag','2500')">Add to Cart</button>
+                        </form> 
+                        </div>
+                    </div>
+		
+            </div>
+        </div>
+    </div>
+    <div id="personaldetails">
+        <div id = "checkout">
+			
+            <div id = "checkoutForm">
+       
+               <div id = "checkoutTopBox">CHECKOUT</div>
+                       
+               <div id = "checkoutMiddleBox">
+                   <form name = "customerInfo">
+                       <label class = "info" for = "firstName">First Name</label>
+                       <input type = "text" name = "firstName" id = "firstName" placeholder = "Enter your first name">
+                                   
+                       <label class = "info" for = "lastName">Last Name</label>
+                       <input type = "text" name = "lastName" id = "lastName" placeholder = "Enter your last name">
+                                   
+                       <label class = "info" for = "emailAddress">Email</label>
+                       <input type = "email" name = "emailAddress" id = "emailAddress" placeholder = "Enter your email">
+                                   
+                       <label class = "info" for = "address">Shipping Address</label>
+                       <textarea name = "address" id = "address" rows= "7"></textarea>
+                   </form>
+               </div>
+               
+               <div id = "checkoutBottomBox">
+               
+               
+                       
+               <button class="buttons" type = "button" onclick="placeOrder()">Submit</button>
+               </div>
+           </div>
+           </div>
+    
+    <div id = "bill"> 
+
+
+        <div class="div_">
+            <p class="invoice-line">================================</p>
+            <img class="logo_" src="images/Hastelogo.png" alt="logo">
+            <p class="text1">INVOICE</p><br><br>
+            <p class="invoice-line">================================</p>
+        <div class="contact">
+          Haste Sports
+          <br>
+        Contact us :+94710000000
+        ===================
+        </div>
+        <div id="personal_details"></div>
+        <div id="products_details"></div>
+        <div id="total"></div>  
+        
+        </div>		
+        
+    </div>
+</div>
+<footer>
+    <div class="productFooter">
+       <a href="#home"><img id="divlogo" src="images/Hastelogo.png" alt="logo"></a>
+       <p id="brief">Haste is an football website that helps
+        you to buy <br> sports equipments, check your knowledge on <br> football and learn new things on football.
+       </p>
+       <p id="coptyrights">© All Rights Reserved.</p>
+       <h2 id="Explore">Developer</h2>
+       
+      <a id="ToDev" href="Page_editor_Hasikala.html" target="_blank"> Meet the <br>Developer</a>
+ </div>
+</footer>
+<script src="newshopJs.js"></script>
+
+</body>
+</html>

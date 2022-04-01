@@ -1,0 +1,469 @@
+*{
+    font-family:Poppins;
+}
+body{
+    background-color:#77A6F7 ;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+#footballIMG{
+    float: right;
+    margin:80px 60px 0px 0px;
+}
+#Qdescription{
+    color: white;
+    position: absolute;
+    top: 30vh;
+    left: 2vw;
+    letter-spacing: 4px;
+    font-size: 35px;
+    /* font-weight:900; */
+
+}
+#Qdescription2{
+    color: white;
+    position: absolute;
+    top: 42vh;
+    left: 5vw;
+    font-size: 25px;
+}
+#startBTN{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 57vh;
+    left: 24vw;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #77A6F7;
+}
+.animate{
+    animation-name: spacing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes spacing{
+    0%{
+        letter-spacing: 5px;
+        margin-left: 0px;
+
+    }
+    50%{
+        letter-spacing: 3px;
+        margin-left: 15px;
+    }
+    100%{
+        letter-spacing: 5px;
+        margin-left: 0px;
+    }
+}
+#startBTN:hover{
+    background-color:#77A6F7;
+    color: white;
+    border:2px solid #f8f8f8;
+
+
+}
+.hide{
+    display: none;
+}
+#rules{
+    border:2px solid black;
+    display: inline-block;
+    width: 600px;
+    height: 50px;
+    position: relative;
+    top: 25vh;
+    left:30vw;
+    text-align: center;
+    background-color: white;
+    font-size: 28px;
+    padding-top: 10px;
+    font-weight: 600;
+    border-radius: 15px;
+
+
+
+}
+/* #Quiz{
+    border: 2px solid black;
+    display: inline-block;
+    margin: auto;
+} */
+#rulesDescript{
+    border: 2px solid black;
+    display: block;
+    position: relative;
+    top: 26vh;
+    left: 30vw;
+    width: 600px;
+    height: 300px;
+    background-color: #D3E3FC;
+    font-size: 17px;
+    line-height: 30px;
+    border-radius: 15px;
+}
+#participantName{
+    position: absolute;
+    bottom: 60px;
+    left: 180px;
+    width: 15vw;
+    height: 25px;
+    text-align: center;
+    color:white;
+    background-color:#77A6F7 ;
+    border: 1px solid;
+    border-radius: 10px;
+}
+#StartingBTN{
+    position: absolute;
+    bottom: 20px;
+    left: 180px;
+    width: 15.5vw;
+    height: 30px;
+    text-align: center;
+    color:white;
+    background-color:#77A6F7 ;
+    border: 1px solid;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+#StartingBTN:hover{
+    color:#77A6F7;
+    background-color:#ffffff ;
+    border: 3px solid;
+    font-weight: 800;
+}
+
+
+
+#quizman{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 25vh;
+    left: 50px;
+}
+#Qborder{
+    border: 2px solid #D3E3FC;
+    display: block;
+    width: 65vw;
+    height: 65vh;
+    float: right;
+    position: absolute;
+    right: 60px;
+    top: 21vh;
+    background-color: #D3E3FC;
+    border-radius: 15px;
+
+}
+#Qbox{
+    position:absolute;
+    border: 2px solid #77A6F7;
+    width: 34vw;
+    height: 41vh;
+    top: 65px;
+    left: 40px;
+    background-color: white;
+    border-radius: 15px;
+}
+.Radiocontainer{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 65px;
+    right: 340px;
+}
+input[type="radio"]{
+    display: none;
+
+}
+label{
+    border: 2px solid #77A6F7 ;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 18px;
+    padding:10px 50px ;
+    display: flex;
+    align-items: center;
+    color:#77A6F7 ;
+    background-color: white;
+
+}
+label::before{
+
+    content: "";
+    height: 20px;
+    width: 20px;
+    border:3px solid #77A6F7;
+    border-radius: 80%;
+    margin-right:20px ;
+}
+input[type="radio"]:checked+label{
+    background-color:#77A6F7;
+    color: white;
+
+}
+input[type="radio"]:checked+label::before{
+    height: 14px;
+    width: 14px;
+    border: 5px solid white;
+    background-color: #77A6F7;
+}
+#nextBTN{
+    width: 355px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border:2px solid white;
+    font-size: 20px;
+    background-color: #77A6F7;
+    color:white;
+    font-weight: 700;
+}
+#nextBTN:hover{
+    background-color: white;
+    color: #77A6F7;
+    border:2px solid #77A6F7;
+}
+#QuestionCount{
+    position: absolute;
+    left: 35px;
+    color: #00887A;
+}
+#timeWrite{
+    position: absolute;
+    bottom: 10px;
+    left: 35px;
+    color: #00887A;
+
+}
+#Questionlist{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    color:black;
+    font-weight: 900;
+    font-size: 25px;
+    padding-right: 5px;
+}
+#congrats{
+    text-align: center;
+    position: relative;
+    top: 13vh;
+    font-size: 27px;
+}
+#score{
+    text-align: center;
+    top: -10px;
+}
+#medal{
+    margin:80px auto 0px auto;
+    display: block;
+    width: 200px;
+    
+
+}
+.changeQBTN{
+    position: relative;
+    left: 40vw;
+    padding: 10px;
+    width: 8vw;
+    margin-right: 50px;
+    font-weight: 900;
+    background-color: rgb(255, 255, 255,0.3);
+    border: 2px solid white;
+
+}
+.changeQBTN:hover{
+    background-color: white;
+    border: 2px solid black;
+}
+#backBTN{
+    width: 9vw;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    font-size: 13px;
+}
+
+
+#reviewpgContain{
+    border: 2px solid rgb(255, 255, 255,0.5);
+    display: inline-block;
+    width: 60vw;
+    height: 83vh;
+    position: absolute;
+    left: 20vw;
+    top: 12vh;
+    background-color:rgb(255, 255, 255,0.4);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    
+
+}
+.reviewcontain2{
+    position: relative;
+    border: 2px solid black;
+    margin:10px 30px 0px 30px;
+
+}
+
+#previousQ{
+    position: absolute;
+    bottom: 10px;
+    left: 18vw;
+    width: 10vw;
+    padding: 7px;
+    background-color: white;
+    border: 2px solid white;
+    font-weight: 900;
+}
+#nextQ{
+    position: absolute;
+    bottom: 10px;
+    left: 33vw;
+    width: 10vw;
+    padding: 7px;
+    background-color: white;
+    border: 2px solid white;
+    font-weight: 900;
+}
+
+#nextQ:hover{
+    border: 2px solid black;
+}
+
+#previousQ:hover{
+    border: 2px solid black;
+}
+
+.QuestionRW{
+    margin-left: 20px;
+    font-size: 15px;
+}
+.Qnum{
+    margin-left: 40px;
+    font-size: 14px;
+}
+#correct1,#correct2{
+    position: absolute;
+    right: 250px;
+    bottom: 10px;
+}
+#pAns1,#pAns2{
+    position: absolute;
+    right:20px ;
+    bottom:10px ;
+
+}
+#basicContainer{
+    margin:10px 0px 10px 28px ;
+}
+
+.basicInfo{
+    padding: 0px;
+    margin: 5px;
+    font-size: 12px;
+}
+#Scorep{
+    float: right;
+    margin-right: 100px;
+}
+#circle {
+    border: 5px solid #77A6F7;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear;
+    animation-iteration-count: 30;
+    position: relative;
+    top: 150px;
+    left:45vw;
+  }
+
+  @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+#loading{
+    position: relative;
+    top: 30vh;
+    left: 47vw;
+    color: white;
+}
+#load{
+    position: relative;
+    top: 10vh;
+}
+
+#timedisplay{
+    text-align: center;
+}
+#timedisplayReview{
+    position: absolute;
+    top: 30px;
+    right: 6vw;
+}
+.correctWrongmark{
+    position: absolute;
+    right: 10px;
+    width: 40px;
+}
+#ReviewToResult{
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#ReviewToResult:hover{
+    border: 2px solid black;
+}
+
+
+
+/* editors page */
+.editorDiv{
+    background-color: white;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+}
+#developername{
+    position: absolute;
+    right: 16vh;
+    top: -10px;
+}
+#developer{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    /* background-color: rgb(75, 190, 211); */
+    background-color: black;
+    width: 15vh;
+    height: 25px;
+    text-align: center;
+    font-size: 17px;
+    padding-top:6px;
+    text-decoration: none;
+    color: white;
+}
+#developer:hover{
+    font-weight: 700;
+}
+#copyright{
+    position: absolute;
+    top: -10px;
+    left: 7px;
+}

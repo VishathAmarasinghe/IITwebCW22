@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="thumbStyles.css">
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+    <link rel="stylesheet" href="fontawesome/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--code obtained from student 2 for nav bar-->
+    <nav class="navbar" >
+        <div class="nav-wrapper" >
+            <div class="logo">
+                <a href="new.html"><img src="Images/Hastelogo.png" alt="image" height="60"></a>
+            </div>
+            
+            <ul class="nav-items">
+                <li>
+                    <a href="new.html"><i class="fa-solid fa-house"></i></a>
+                </li> 
+    
+                <li>
+                    <a href="shop.html">SHOP</a>
+                </li>
+
+                <li>
+                    <a href="quiz.html">QUIZ</a>
+                </li>
+
+                <li>
+                    
+                    <div class="dropdown">
+                      <a href="leagues.html" class="dropdown-cont">ABOUT FOOTBALL</a>
+                      <div class="dropdown-content">
+                        <a href="leagues.html#history">HISTORY</a>
+                        <a href="leagues.html#positions">POSITIONS</a>
+                        <a href="leagues.html#leagues">LEAUGES</a>
+                      </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="thumbnail.html">GALLERY</a>
+                </li>
+                
+                <li>
+                    <a href="sitemap.html">SITE MAP</a>
+                </li>
+                
+                <li>
+                    <a href="aboutus.html">ABOUT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+<!--for the two pulldown menus-->
+<section> 
+    <h1 id="header">Gallery</h1>
+    <div class="pulldown">
+    <!--option for background color-->    
+        <div class="bgpulldown">
+            <label for="bgcolor">Background colour</label>
+            <select id="bgcolor" onchange="changecolor(this.value)">
+                <option value="#ffffff">White</option>
+                <option value="#fffee6">Cream</option>
+                <option value="#f0f7fc">Sky blue</option>
+                <option value="#f6e8ff">Light purple</option>
+            </select>
+        </div>    
+    <!--option for text color-->    
+        <div class="txtpulldown">
+            <label for="Text_colour">Text colour</label>
+            <select id="Text_colour" onchange="changeTxtColor(this.value)">
+                <option value="#000000">Black</option>
+                <option value="#ffffff">White</option>
+                <option value="#8F00FF">Violet</option>
+                <option value="#f50505">Red</option>
+                <option value="#e0650d">Orange</option>
+            </select>
+        </div>  
+    </div>
+</section>    
+<!--for the thumbnail images-->
+<section class="imageContainer">   
+    <div class="mainbox" id="largeimg">   
+        <div class="main">
+            <img id="mainImg" src="Images/football0.jpg" alt="bigimage" />
+        </div>
+        <div class="main_text">
+            <p id="para"><span>Football Boot</span><br><br><br>Football boots are a type of special shoes worn when playing football which has studs pointed at the bottom of the shoe to provide grip to the ground which is usefull when running and controlling the ball.</p>
+        </div>
+    </div>  
+    <div>
+        <ul class="thumbimg">
+            <li onmouseover="changeThumb(0); changeText(1)"><img src="Images/football0.jpg" alt="boots" /></li>
+            <li onmouseover="changeThumb(1); changeText(2)"><img src="Images/football1.jpg" alt="ball" /></li>
+            <li onmouseover="changeThumb(2); changeText(3)"><img src="Images/football2.jpg" alt="team" /></li>
+            <li onmouseover="changeThumb(3); changeText(4)"><img src="Images/football3.jpg" alt="worldcup" /></li>   
+            <li onmouseover="changeThumb(4); changeText(5)"><img src="Images/football4.jpg" alt="pitch" /></li> 
+        </ul>
+    </div>    
+</section>
+<section class="footer" >
+        <div class="container-5" id="gallery-footer">
+            <div class="footer-row">
+                <div class="footer-col-1">
+                    <div class="footer-logo">
+                        <a href="#"><img src="Images/Haste-logo.png" alt="image" height="60"></a>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            Haste is a football website that helps you to buy sports equipments, check your knowledge on football and learn new things on football.
+                        </p>
+                        <p id="copyrights">© All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="footer-heading">
+                        <h4>Explore</h4>
+                    </div>
+                    <div class="footer-row-2">
+                        <div class="footer-newcol-1">
+                            <ul class="footer-nav">
+                                <li>
+                                    <a href="#home">Home</a>
+                                </li> 
+
+                                <li>
+                                    <a href="quiz.html">Quiz</a>
+                                </li>
+
+                                <li>
+                                    <a href="leagues.html">About Football</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-newcol-2">
+                            <ul class="footer-nav">
+                                <li>
+                                    <a href="thumbnail.html">Gallery</a>
+                                </li> 
+
+                                <li>
+                                    <a href="sitemap.html">Site Map</a>
+                                </li>
+
+                                <li>
+                                    <a href="aboutus.html">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    
+    </section>    
+<script src="thumb.js"></script>
+<script>
+    document.getElementById("ToDev").
+    addEventListener("click", function() {
+        document.location.href="pageEditor.html";
+    });
+</script>
+</body>
+</html>

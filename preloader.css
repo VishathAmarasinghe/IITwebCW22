@@ -1,0 +1,104 @@
+.preloader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	position: fixed;
+	top: 0;
+    left:0;
+	 width: 100vw;
+	 height: 100vh;
+	 z-index: 200;
+	 -webkit-transition: all 0.25s ease;
+	 transition: all 0.25s ease;
+	 -webkit-transition-delay: 1s;
+	 transition-delay: 1s;
+	 background: #ff00ae;
+	 background: linear-gradient(45deg, #ff00ae 0%, #9100ff 50%, #ff00ae 100%);
+	 background-size: 200% 200%;
+	 background-position: left bottom;
+	 animation: animateGradient 2s infinite;
+}
+
+p{
+   font-family: poppins ;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+	animation:floating 3s ;
+	animation-delay: 0s;
+}
+
+
+.preloaderHeading{
+	color: white;
+	font-weight: 900;
+	font-size: 34px;
+	animation:floating 3s ;
+	animation-delay: 0s;
+	font-family: poppins;
+	
+}
+#details{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@keyframes animateGradient {
+	0% {
+		background-position:0% 50%;
+	}
+	50% {
+		background-position:100% 50%;
+	}
+	100% {
+		background-position:0% 50%;
+	}
+}
+@keyframes floating{
+	0%{
+		opacity:0% ;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+
+.editorDiv{
+	background-color: white;
+	height: 30px;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+#developername{
+	position: absolute;
+	right: 16vh;
+	top: 0px;
+
+}
+#developer{
+	position: absolute;
+	right: 00px;
+	top: 0px;
+	background-color: rgb(231, 71, 223);
+	width: 20vh;
+	height: 25px;
+	text-align: center;
+	font-size: 17px;
+	padding-top:5px;
+	text-decoration: none;
+}
+img{
+	width: 100px;
+	height: 100px;
+	z-index: 2;
+}
+
+
+
+
+

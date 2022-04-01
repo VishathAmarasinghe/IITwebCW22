@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="new2styles.css"/>
+    <script src="https://kit.fontawesome.com/ca614df6dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav-container">
+		<div class="wrapper">
+			<nav id="navbar">
+				<div class="logo">
+					<img src="Images/Haste logo.png" alt="image" height="80px">
+				</div>
+				
+				<ul class="nav-items">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					
+					<li>
+						<a href="#">Shop</a>
+					</li>
+					
+					<li>
+						<a href="#">Quiz</a>
+					</li>
+					
+					<li>
+						<a href="#">Feedback</a>
+					</li>
+					
+					<li>
+						<a href="#">About Us</a>
+					</li>
+				
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <section class="hero-section">
+        <div class="container">
+            <div class="text-box">
+                <h1 class="main-heading">Progress on the fingertips!</h1>
+				<p class="paragraph"><span>Zapper<sup>TM</sup></span> is an app that helps you organize yourself on the daily basis using systematic algorithms to achieve success.</p>
+                
+                <div class="buttons">
+					  <a href="#" class="shop-button">
+						<div class="button-content">
+						  <h6>GO TO <span>Our Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h6>
+						</div>
+					  </a>
+					  <a href="#" class="quiz-button">
+						<div class="button-content">
+						  <h6>GO TO <span>Football Quiz</span></h6>
+						</div>
+					  </a>
+					</div>
+            </div>
+            <div class="image-box">
+                <div class="hero-img">
+					  <img src="../../../CW/CW Files/Footballer.png" alt="image">
+				</div>
+            </div>
+        </div>
+    </section>
+    <div>
+    </div>
+    
+<script>
+     let menuIcon = document.querySelector('.menuIcon');
+        let nav = document.querySelector('.overlay-menu');
+
+        menuIcon.addEventListener('click', () => {
+            if (nav.style.transform != 'translateX(0%)') {
+                nav.style.transform = 'translateX(0%)';
+                nav.style.transition = 'transform 0.2s ease-out';
+            } else { 
+                nav.style.transform = 'translateX(-100%)';
+                nav.style.transition = 'transform 0.2s ease-out';
+            }
+        });
+
+
+        // Toggle Menu Icon ========================================
+        let toggleIcon = document.querySelector('.menuIcon');
+
+        toggleIcon.addEventListener('click', () => {
+            if (toggleIcon.className != 'menuIcon toggle') {
+                toggleIcon.className += ' toggle';
+            } else {
+                toggleIcon.className = 'menuIcon';
+            }
+        });
+
+</script>
+</body>
+</html>

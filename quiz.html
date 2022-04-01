@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizCss.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body onload="changeQ()">
+    <div id="navigationBar">
+        <nav class="navbar" >
+            <div class="nav-wrapper" >
+                <div class="logo">
+                    <a href="new.html"><img src="Images/Hastelogo.png" alt="image" height="60"></a>
+                </div>
+                
+                <ul class="nav-items">
+                    <li>
+                        <a href="new.html"><i class="fa-solid fa-house"></i></a>
+                    </li> 
+        
+                    <li>
+                        <a href="shop.html">SHOP</a>
+                    </li>
+    
+                    <li>
+                        <a href="quiz.html">QUIZ</a>
+                    </li>
+    
+                    <li>
+                        
+                        <div class="dropdown">
+                          <a href="leagues.html" class="dropdown-cont">ABOUT FOOTBALL</a>
+                          <div class="dropdown-content">
+                            <a href="leagues.html#history">HISTORY</a>
+                            <a href="leagues.html#positions">POSITIONS</a>
+                            <a href="leagues.html#leagues">LEAUGES</a>
+                          </div>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="thumbnail.html">GALLERY</a>
+                    </li>
+                    
+                    <li>
+                        <a href="sitemap.html">SITE MAP</a>
+                    </li>
+                    
+                    <li>
+                        <a href="aboutus.html">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="editorDiv">
+        <p id="copyright">© 2022 All Rights Reserved.</p><p id="developername">Web Page developer:</p><a href="vishathEditorPage.html" target="_blank" id="developer">Meet Them</a>
+    </div>
+    <div id="StartingWEB" >
+        <img id="footballIMG" src="images/soccergame.gif" alt="footballIMage">
+        <h1 class="animate" id="Qdescription">Let’s Check Your football Knowledge!</h1>
+        <h3 class="animate" id="Qdescription2">1 Minute small quiz to check your Knowledge.</h3>
+        <button type="button" id="startBTN" onclick="start()">Let's Start!</button>
+    </div>
+    
+    <div id="Quiz" class="hide">
+        <div id="rules">Rules and Regulations</div>
+        <div id="rulesDescript">
+            <ul>
+            <li> You have 10 Questions to Answer.</li>
+            <li>Time limit is one minute.</li>
+            <li>After the time limit exceeded it will automatically submit the answers.</li>
+            <li>You can Answer only one question at one time. (After clicking the next question button you cannot come back to the previous question.)</li>
+            </ul>
+
+            <form name="participant">
+            <input type="text" name="participantName" id="participantName" placeholder="Enter your name to Start">
+            </form>
+            <button type="button" id="StartingBTN" onclick="openQuiz()">Start</button>
+        </div>
+    </div>
+
+    <div id="Questions" class="hide">
+        <img id="quizman" src="images/Quiz.gif" alt="quizGIF">
+        <div id="Qborder">
+            <div id="Qbox">
+                <p id="Questionlist"></p>
+            </div>
+
+            <div class="Radiocontainer">
+                <form>
+                <input type="radio" name="red" id="QA" value="A">
+                <label for="QA" id="checkA"></label>
+                <br>
+                <input type="radio" name="red" id="QB" value="B">
+                <label for="QB" id="checkB"></label>
+                <br>
+                <input type="radio" name="red" id="QC" value="C">
+                <label for="QC" id="checkC"></label>
+                <br>
+                <input type="radio" name="red" id="QD" value="D">
+                <label for="QD" id="checkD"></label>
+                <br>
+                </form>
+                <button type="button" id="nextBTN" >Next Question</button>
+                </div>
+
+                <p id="QuestionCount"></p>
+                <p id="timeWrite">Time Duration: 59 Seconds</p>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <div id="resulting" class="hide">
+        <h1 id="congrats">Congratulations!</h1>
+        <br>
+        <img id="medal" src="images/Goldbadge.png" alt="goldbadge">
+        <br>
+        <br>
+        <h2 id="score">You Scored 20/20</h2>
+        <h3 id="timedisplay">Time Elapsed:   Seconds</h3>
+        <br>
+        <br>
+        <button class="changeQBTN" id="reviewBTN"  type="button">Review</button>
+        <a href="quiz.html" class="changeQBTN" id="backBTN" >Play Again</a>
+  
+
+    </div>
+
+    <div id="reviewPG" class="hide">
+        <div id="reviewpgContain">
+            <img src="images/backarrow.png" alt="backarrow" id="ReviewToResult">
+            <div id="resultContainer">
+            <h3 id="Scorep">Score</h3>
+            <h4 id ="timedisplayReview">Time Elapsed</h4>
+            </div>
+            <div id="basicContainer">
+            <h4 id="nameprint" class="basicInfo">Name</h4>
+            <h4 class="basicInfo">Total Number of Questions: 10</h4>
+            <h4 id="correctp" class="basicInfo">Total Number of Correct Answers</h4>
+            <h4 id="wrongp" class="basicInfo">Total Number of Wrong Answers</h4>
+            </div>
+            <div id="review1" class="reviewcontain2">
+                <h3 id="Q1" class="QuestionRW">hello </h3>
+                <img src="images/bulb.png" alt="correctworng" id="sign1" class="correctWrongmark" >
+
+                <p id="numA" class="Qnum">sfaef</p>
+                <p id="numB" class="Qnum">sfaef</p>
+                <p id="numC" class="Qnum">sfaef</p>
+                <p id="numD" class="Qnum">sfaef</p>
+                <span id="correct1" class="correctview">correct Answer</span>
+                <span id="pAns1" class="correctview">Your Answer</span>
+                <br>
+            </div>
+
+            <div id="review2" class="reviewcontain2" >
+                <h3 id="Q2" class="QuestionRW">hello </h3>
+                <img src="images/bulb.png" alt="correctworng" id="sign2" class="correctWrongmark" >
+
+                <p id="numE" class="Qnum">sfaef</p>
+                <p id="numF" class="Qnum">sfaef</p>
+                <p id="numG" class="Qnum">sfaef</p>
+                <p id="numH" class="Qnum">sfaef</p>
+                <span id="correct2" class="correctview">correct Answer</span>
+                <span id="pAns2" class="correctview">Your Answer</span>
+                <br>
+            </div>
+            <br>
+
+            <button type="button" id="previousQ">Previous</button>
+            <button type="button" id="nextQ">Next</button>
+        </div>
+    </div>
+
+    <div id="load" class="hide">
+        <div id="circle">
+
+        </div>
+        <h4 id="loading">Loading</h4>
+    </div>
+    
+
+
+    <script src="quizJs.js"></script>
+</body>
+</html>
